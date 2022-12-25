@@ -1,0 +1,139 @@
+.how-it-works {
+    padding: 169px 0 51px 0;
+}
+
+.how-it-works-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.how-it-works-header-head {
+    padding-bottom: 52px;
+    max-width: 584px;
+    margin-right: 30px;
+}
+
+.how-it-works-header-title {
+    margin-bottom: -3px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 157%;
+}
+
+.how-it-works-header-subtitle {
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    color: #01996D;
+}
+
+.how-it-works-header-content {
+    padding-top: 58px;
+    max-width: 681px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #424242;
+}
+
+.how-it-works-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 390px);
+    column-gap: 95px;
+}
+
+.step {
+    max-width: 390px;
+}
+
+.step:nth-child(2) {
+    padding-top: 287px;
+}
+
+.step:nth-child(3) {
+    padding-top: 54px;
+}
+
+.step-heading {
+    position: relative;
+    padding-top: 135px;
+    padding-left: 88px;
+    margin-bottom: 55px;
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.step-heading::before {
+    content: attr(data-number);
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150%;
+    color: rgba(1, 153, 109, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.step-text {
+    margin-bottom: 60px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.step-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 1399px) {
+
+    .how-it-works {
+        padding: 80px 0 21px 0;
+    }
+
+    .how-it-works-header-subtitle {
+        font-size: 40px;
+        line-height: 130%;
+    }
+
+    .how-it-works-header-content {
+        padding-top: 20px;
+        max-width: 681px;
+        line-height: 150%;
+    }
+
+    .how-it-works-header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .how-it-works-header-head {
+        max-width: 584px;
+        padding-bottom: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .step:nth-child(3) {
+        padding-top: 0px;
+    }
+
+    .step:nth-child(2) {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .how-it-works-steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 290px);
+        column-gap: 95px;
+    }
+}
